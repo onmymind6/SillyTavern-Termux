@@ -4,13 +4,12 @@
 
 **安卓设备上的 SillyTavern 一站式部署与管理解决方案**
 
-[![GitHub Stars](https://img.shields.io/github/stars/onmymind6/SillyTavern-Termux.svg?style=for-the-badge&logo=github)](https://github.com/onmymind6/SillyTavern-Termux)
-[![License](https://img.shields.io/badge/License-Custom%20NC-blue.svg?style=for-the-badge)](https://github.com/onmymind6/SillyTavern-Termux/blob/main/LICENSE)
-[![Version](https://img.shields.io/badge/Version-2025.12.11-brightgreen.svg?style=for-the-badge)](https://github.com/onmymind6/SillyTavern-Termux/blob/main/Menu.sh)
-[![Platform](https://img.shields.io/badge/Platform-Termux%20(Android)-orange.svg?style=for-the-badge&logo=android)](https://termux.dev/cn/index.html)
-[![QQ Group](https://img.shields.io/badge/QQ交流群-807134015-blue?style=for-the-badge&logo=tencentqq)](https://qm.qq.com/q/Z1kk7tCrcG)
-
 </div>
+
+> ⚠️ **二改声明**
+> 本项目二次修改自原作者 **print-yuhuan** 的 [SillyTavern-Termux](https://github.com/print-yuhuan/SillyTavern-Termux)。
+> 因原脚本体验出色，且原仓库与一键安装脚本已失效（404），为继续使用而进行二改。
+> **本项目仅限个人使用，不作任何商业用途。** 所有版权归原作者所有。
 
 ---
 
@@ -63,7 +62,7 @@
 - 🎨 **全中文界面**：菜单、提示、帮助文档全面中文化，无语言障碍
 - 🖌️ **终端美化**：自动配置 MapleMono 等宽字体，提升终端可读性
 - 📱 **移动优化**：界面布局针对手机屏幕优化，操作流畅便捷
-- 🔗 **智能跳转**：支持一键跳转 QQ 群、邮件客户端、Discord 频道
+- 🔗 **智能跳转**：支持一键跳转邮件客户端、Discord 频道
 
 ### 🌐 丰富资源生态
 
@@ -102,8 +101,6 @@
 | **GitHub** | v0.119.0-beta.3 | ⭐⭐⭐⭐ | [下载 APK](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk) |
 | **F-Droid** | v0.118.3 (稳定版) | ⭐⭐⭐⭐⭐ | [下载 APK](https://f-droid.org/repo/com.termux_1002.apk) |
 | **F-Droid** | v0.119.0-beta.3 | ⭐⭐⭐⭐ | [下载 APK](https://f-droid.org/repo/com.termux_1022.apk) |
-
-> 💡 **下载遇到问题？** 加入 QQ 交流群 **807134015**，群文件中提供 Termux 安装包备用下载。
 
 ---
 
@@ -154,7 +151,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 | **4** | **🧩 酒馆插件** | 社区插件一键安装/卸载，含详细功能介绍和安全提示 |
 | **5** | **💾 系统维护** | 查看依赖版本、修复环境、备份/恢复用户数据和完整本体、**版本切换** |
 | **6** | **📦 脚本管理** | 检测脚本更新、在线升级、查看更新日志、一键彻底卸载 |
-| **7** | **ℹ️ 关于脚本** | 作者信息、QQ 群、邮件反馈、资源下载、社群链接 |
+| **7** | **ℹ️ 关于脚本** | 作者信息、邮件反馈、资源下载、社群链接 |
 
 ### 🔧 局域网配置详解
 
@@ -300,7 +297,6 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 1. 检查网络连接是否稳定，建议切换至 WiFi 环境
 2. 确认能否访问 GitHub（`ping github.com`）
 3. 如果多次失败，可尝试更换镜像源或使用代理
-4. 加入 QQ 群 **807134015** 寻求技术支持
 
 **常见错误代码：**
 - `curl: (6)` - DNS 解析失败，检查网络连接
@@ -364,8 +360,6 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 2. 选择 `2. 修复依赖环境`
 3. 脚本会自动重新安装所有必要的依赖包
 4. 修复完成后，重新尝试启动 SillyTavern
-
-如果问题仍未解决，请加入 QQ 群并提供详细的错误信息。
 </details>
 
 <details>
@@ -428,28 +422,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 </details>
 
 <details>
-<summary><b>Q12: 如何使用关联启动功能?</b></summary>
-
-**A:** 关联启动功能可让您在启动酒馆时同时启动 Gemini-CLI-Termux 反代服务。
-
-**配置步骤:**
-1. 确保已安装 Gemini-CLI-Termux（独立的第三方反代项目，请自行获取）
-2. 确保已安装 Python (`pkg install python`)
-3. 进入主菜单，选择 `3. 酒馆配置` → `3. 关联启动配置`
-4. 选择 `1. 开启关联启动`
-5. 重新启动酒馆，反代服务将自动在后台运行
-
-**查看日志:**
-- 反代服务日志保存在 `$HOME/setup.log`
-- 通过「关联启动配置 → 查看反代日志」查看最后 50 行日志
-- 日志文件超过 5MB 时，下次启动会自动清理
-
-**关闭关联启动:**
-- 选择 `2. 关闭关联启动` 即可恢复为单独启动模式
-</details>
-
-<details>
-<summary><b>Q13: 关联启动后无法启动，提示找不到 Gemini-CLI-Termux?</b></summary>
+<summary><b>Q12: 关联启动后无法启动，提示找不到 Gemini-CLI-Termux?</b></summary>
 
 **A:** 这是因为您开启了关联启动但未安装 Gemini-CLI-Termux。
 
@@ -519,25 +492,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 
 <table>
 <tr>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/QQ群-807134015-blue?style=for-the-badge&logo=tencentqq" alt="QQ Group"/>
-<br><br>
-<b>QQ 交流群</b>
-<br>
-<a href="https://qm.qq.com/q/Z1kk7tCrcG">点击加入</a>
-<br><br>
-实时在线交流<br>快速获取帮助<br>分享使用经验
-</td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Email-print.yuhuan@gmail.com-red?style=for-the-badge&logo=gmail" alt="Email"/>
-<br><br>
-<b>邮件反馈</b>
-<br>
-<a href="mailto:print.yuhuan@gmail.com">发送邮件</a>
-<br><br>
-详细问题描述<br>功能建议提交<br>商业授权咨询
-</td>
-<td align="center" width="33%">
+<td align="center" width="100%">
 <img src="https://img.shields.io/badge/GitHub-Issues-black?style=for-the-badge&logo=github" alt="GitHub Issues"/>
 <br><br>
 <b>GitHub Issues</b>
@@ -604,13 +559,6 @@ Bug 报告<br>功能请求<br>公开讨论
 
 本项目部署的 [SillyTavern](https://github.com/SillyTavern/SillyTavern) 采用 **AGPL-3.0** 许可协议。
 
-### 商业授权
-
-本项目禁止用于商业用途，请通过以下方式联系作者：
-
-- 📧 邮件：print.yuhuan@gmail.com
-- 💬 QQ 群：807134015
-
 详细许可条款请查看 [LICENSE](./LICENSE) 文件。
 
 ---
@@ -631,7 +579,6 @@ Bug 报告<br>功能请求<br>公开讨论
 - ⭐ 在 [GitHub](https://github.com/onmymind6/SillyTavern-Termux) 点亮 Star
 - 🔀 Fork 本项目并提交改进
 - 📢 分享给更多需要的朋友
-- 💬 加入 QQ 群参与社区建设
 
 **你的支持是项目持续维护的最大动力！**
 
