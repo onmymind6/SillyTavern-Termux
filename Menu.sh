@@ -1779,18 +1779,20 @@ install_discord_app() {
         echo -e "${YELLOW}${BOLD}>> Discord 下载链接格式错误：$DISCORD_URL${NC}"
         press_any_key; return
     fi
-    FILENAME="Discord.apk"
+    FILENAME="Discord_324.16-Stable.apks"
     DEST="/storage/emulated/0/Download/$FILENAME"
     echo -e "${CYAN}${BOLD}>> 开始下载 Discord 应用...${NC}"
     if curl -Lf --progress-bar -o "$DEST" "$DISCORD_URL"; then
         if [ -s "$DEST" ]; then
             echo -e "${GREEN}${BOLD}>> 下载完成，已保存到: $DEST${NC}"
+            echo -e "${YELLOW}${BOLD}>> 该安装包为 .apks 格式（split APKs），系统安装器无法直接打开。${NC}"
+            echo -e "${YELLOW}${BOLD}>> 请使用 SAI 安装器或 MT管理器 打开该文件进行安装。${NC}"
             if command -v am >/dev/null 2>&1; then
                 am start -a android.intent.action.VIEW -d "file://$DEST" -t "application/vnd.android.package-archive" >/dev/null 2>&1 \
-                    && echo -e "${GREEN}${BOLD}>> 已调用系统安装管理器安装 Discord。${NC}" \
-                    || echo -e "${YELLOW}${BOLD}>> 未能自动调用安装管理器，请手动在文件管理中安装 Discord。${NC}"
+                    && echo -e "${GREEN}${BOLD}>> 已尝试调用安装管理器（若 .apks 无法识别，请用 SAI / MT管理器 手动安装）。${NC}" \
+                    || echo -e "${YELLOW}${BOLD}>> 未能自动调用安装管理器，请用 SAI 安装器或 MT管理器 手动安装。${NC}"
             else
-                echo -e "${YELLOW}${BOLD}>> 当前环境不支持自动安装，请手动在文件管理中安装 Discord。${NC}"
+                echo -e "${YELLOW}${BOLD}>> 当前环境不支持自动安装，请用 SAI 安装器或 MT管理器 手动安装。${NC}"
             fi
         else
             echo -e "${RED}${BOLD}>> 下载失败，文件为空，请检查网络或存储权限。${NC}"
