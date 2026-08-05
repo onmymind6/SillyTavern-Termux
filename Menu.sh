@@ -74,9 +74,9 @@ SillyTavern-Termux 更新日志 2025-12-11
 
 ===============================================
 "
-REMOTE_ENV_URL="https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/.env"
-REMOTE_INSTALL_URL="https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/Install.sh"
-REMOTE_MENU_URL="https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/Menu.sh"
+REMOTE_ENV_URL="https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/.env"
+REMOTE_INSTALL_URL="https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Install.sh"
+REMOTE_MENU_URL="https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Menu.sh"
 
 # ==== 通用函数 ====
 get_version() { [ -f "$1" ] && grep -E "^$2=" "$1" | head -n1 | cut -d'=' -f2 | tr -d '\r'; }

@@ -4,9 +4,9 @@
 
 **安卓设备上的 SillyTavern 一站式部署与管理解决方案**
 
-[![GitHub Stars](https://img.shields.io/github/stars/print-yuhuan/SillyTavern-Termux.svg?style=for-the-badge&logo=github)](https://github.com/print-yuhuan/SillyTavern-Termux)
-[![License](https://img.shields.io/badge/License-Custom%20NC-blue.svg?style=for-the-badge)](https://github.com/print-yuhuan/SillyTavern-Termux/blob/main/LICENSE)
-[![Version](https://img.shields.io/badge/Version-2025.12.11-brightgreen.svg?style=for-the-badge)](https://github.com/print-yuhuan/SillyTavern-Termux/blob/main/Menu.sh)
+[![GitHub Stars](https://img.shields.io/github/stars/onmymind6/SillyTavern-Termux.svg?style=for-the-badge&logo=github)](https://github.com/onmymind6/SillyTavern-Termux)
+[![License](https://img.shields.io/badge/License-Custom%20NC-blue.svg?style=for-the-badge)](https://github.com/onmymind6/SillyTavern-Termux/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-2025.12.11-brightgreen.svg?style=for-the-badge)](https://github.com/onmymind6/SillyTavern-Termux/blob/main/Menu.sh)
 [![Platform](https://img.shields.io/badge/Platform-Termux%20(Android)-orange.svg?style=for-the-badge&logo=android)](https://termux.dev/cn/index.html)
 [![QQ Group](https://img.shields.io/badge/QQ交流群-807134015-blue?style=for-the-badge&logo=tencentqq)](https://qm.qq.com/q/Z1kk7tCrcG)
 
@@ -112,7 +112,7 @@
 打开 Termux，粘贴并执行以下命令：
 
 ```bash
-curl -O https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/Install.sh && bash Install.sh
+curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Install.sh && bash Install.sh
 ```
 
 **安装过程自动完成以下操作：**
@@ -186,6 +186,7 @@ curl -O https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/h
 
 **使用前提:**
 - 模式2 需要先安装 [Gemini-CLI-Termux](https://github.com/print-yuhuan/Gemini-CLI-Termux)
+  > ⚠️ 注：Gemini-CLI-Termux 为原作者维护的独立项目，本仓库不包含其代码；若链接失效，请自行搜索替代源。
 - 确保已安装 Python 环境 (`pkg install python`)
 - 反代服务将后台运行，日志保存在 `$HOME/setup.log`
 
@@ -507,9 +508,9 @@ curl -O https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/h
 
 ### 本项目资源
 
-- 🏠 **项目主页**：[github.com/print-yuhuan/SillyTavern-Termux](https://github.com/print-yuhuan/SillyTavern-Termux)
-- 📋 **问题反馈**：[提交 Issue](https://github.com/print-yuhuan/SillyTavern-Termux/issues)
-- 📝 **更新日志**：[查看 Releases](https://github.com/print-yuhuan/SillyTavern-Termux/releases)
+- 🏠 **项目主页**：[github.com/onmymind6/SillyTavern-Termux](https://github.com/onmymind6/SillyTavern-Termux)
+- 📋 **问题反馈**：[提交 Issue](https://github.com/onmymind6/SillyTavern-Termux/issues)
+- 📝 **更新日志**：[查看 Releases](https://github.com/onmymind6/SillyTavern-Termux/releases)
 
 ---
 
@@ -542,7 +543,7 @@ curl -O https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/h
 <br><br>
 <b>GitHub Issues</b>
 <br>
-<a href="https://github.com/print-yuhuan/SillyTavern-Termux/issues">提交反馈</a>
+<a href="https://github.com/onmymind6/SillyTavern-Termux/issues">提交反馈</a>
 <br><br>
 Bug 报告<br>功能请求<br>公开讨论
 </td>
@@ -628,7 +629,7 @@ Bug 报告<br>功能请求<br>公开讨论
 
 如果本项目对你有帮助，欢迎通过以下方式支持：
 
-- ⭐ 在 [GitHub](https://github.com/print-yuhuan/SillyTavern-Termux) 点亮 Star
+- ⭐ 在 [GitHub](https://github.com/onmymind6/SillyTavern-Termux) 点亮 Star
 - 🔀 Fork 本项目并提交改进
 - 📢 分享给更多需要的朋友
 - 💬 加入 QQ 群参与社区建设

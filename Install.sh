@@ -93,7 +93,7 @@ mkdir -p "$FONT_DIR"
 if [ -f "$FONT_PATH" ]; then
     echo -e "${YELLOW}${BOLD}>> 字体文件已存在，跳过下载。${NC}"
 else
-    if curl -L --progress-bar -o "$FONT_PATH" "https://github.com/print-yuhuan/SillyTavern-Termux/raw/refs/heads/main/MapleMono.ttf"; then
+    if curl -L --progress-bar -o "$FONT_PATH" "https://github.com/onmymind6/SillyTavern-Termux/raw/refs/heads/main/MapleMono.ttf"; then
         echo -e "${GREEN}${BOLD}>> 字体已下载并保存为 .termux/font.ttf${NC}"
     else
         echo -e "${RED}${BOLD}>> 字体下载失败，请检查网络或稍后重试。${NC}"
@@ -135,8 +135,8 @@ fi
 echo -e "\n${CYAN}${BOLD}==== 步骤 6/8：下载菜单脚本与配置文件 ====${NC}"
 MENU_PATH="$HOME/Menu.sh"
 ENV_PATH="$HOME/.env"
-MENU_URL="https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/Menu.sh"
-ENV_URL="https://raw.githubusercontent.com/print-yuhuan/SillyTavern-Termux/refs/heads/main/.env"
+MENU_URL="https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Menu.sh"
+ENV_URL="https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/.env"
 
 if [ -f "$MENU_PATH" ]; then
     echo -e "${YELLOW}${BOLD}>> Menu.sh 已存在，跳过下载。${NC}"
