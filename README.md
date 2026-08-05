@@ -185,8 +185,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 | **模式2** | 关联启动反代+酒馆 | `python run.py & bash start.sh` | 需要通过 Gemini-CLI-Termux 反代 API 的用户 |
 
 **使用前提:**
-- 模式2 需要先安装 [Gemini-CLI-Termux](https://github.com/print-yuhuan/Gemini-CLI-Termux)
-  > ⚠️ 注：Gemini-CLI-Termux 为原作者维护的独立项目，本仓库不包含其代码；若链接失效，请自行搜索替代源。
+- 模式2 需要先安装 Gemini-CLI-Termux（独立的第三方反代项目，请自行获取其安装方式）
 - 确保已安装 Python 环境 (`pkg install python`)
 - 反代服务将后台运行，日志保存在 `$HOME/setup.log`
 
@@ -434,7 +433,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 **A:** 关联启动功能可让您在启动酒馆时同时启动 Gemini-CLI-Termux 反代服务。
 
 **配置步骤:**
-1. 确保已安装 [Gemini-CLI-Termux](https://github.com/print-yuhuan/Gemini-CLI-Termux)
+1. 确保已安装 Gemini-CLI-Termux（独立的第三方反代项目，请自行获取）
 2. 确保已安装 Python (`pkg install python`)
 3. 进入主菜单，选择 `3. 酒馆配置` → `3. 关联启动配置`
 4. 选择 `1. 开启关联启动`
@@ -455,7 +454,7 @@ curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/head
 **A:** 这是因为您开启了关联启动但未安装 Gemini-CLI-Termux。
 
 **解决方案 1 - 安装依赖:**
-1. 安装 Gemini-CLI-Termux: 访问 [Gemini-CLI-Termux 项目页](https://github.com/print-yuhuan/Gemini-CLI-Termux)
+1. 安装 Gemini-CLI-Termux: 请自行获取该独立第三方反代项目的安装方式
 2. 确保安装 Python: `pkg install python`
 3. 重新启动酒馆
 
