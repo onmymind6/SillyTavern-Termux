@@ -109,8 +109,11 @@
 打开 Termux，粘贴并执行以下命令：
 
 ```bash
-curl -O https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Install.sh && bash Install.sh
+curl -sL https://raw.githubusercontent.com/onmymind6/SillyTavern-Termux/refs/heads/main/Install.sh | tr -d '\r' > Install.sh && bash Install.sh
 ```
+
+> 💡 **为什么用 `tr -d '\r'`？**
+> 如果你在 Windows 上克隆过本仓库（`core.autocrlf=true` 时 Git 会把换行符转成 Windows 格式），下载下来的脚本可能带着 `\r` 回车符，导致 bash 报 `$'\r': command not found`。`tr -d '\r'` 会把它去掉，确保脚本在任何情况下都能正常运行。
 
 **安装过程自动完成以下操作：**
 
